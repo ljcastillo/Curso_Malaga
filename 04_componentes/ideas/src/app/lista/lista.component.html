@@ -1,0 +1,12 @@
+<p>
+  <label for="">Dime una idea</label>
+  <input type="text" id="idea" [(ngModel)]="sNuevaIdea">
+</p>
+
+<p>
+  <button (clic)="addIdea()">Añadir</button>
+</p>
+
+<ul>
+  <li *ngFor="let idea of aIdeas">{{idea}}</li>
+</ul>
