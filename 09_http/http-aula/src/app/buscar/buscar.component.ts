@@ -21,8 +21,9 @@ export class BuscarComponent implements OnInit {
   }
 
   btnBuscar() {
-    this.http.get(URL + this.claveBusqueda).subscribe(response => console.log(response.json()));
-    //this.aResultados = [];
+    this.http.get(URL + this.claveBusqueda)
+    .subscribe(response => console.log(response));
+    // this.aResultados = [];
   }
 
 }
