@@ -10,7 +10,7 @@ export class AppComponent {
 
   private books: string[] = [];
 
-  constructor(private http: Http, private service: BooksService) { }
+  constructor(private service: BooksService) { }
 
   search(title: string) {
 
